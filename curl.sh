@@ -18,5 +18,9 @@ EOS
 )
 
 # POINT: "${BODY}"という形で""で囲む ref: http://takuya-1st.hatenablog.jp/entry/2017/03/22/144700
-curl -u username:password -X POST -H Accept:application/json -H Content-Type:application/json --data "${BODY}" http://localhost:12345/${VAR2}/bar
+curl -u username:password \
+  -X POST \
+  -H Accept:application/json \
+  -H Content-Type:application/json \
+  --data "${BODY}" http://localhost:12345/${VAR2}/bar
 
